@@ -1,0 +1,95 @@
+\documentclass{csereport}
+
+% Acronym
+
+
+
+% Actual variables
+
+
+
+% Document
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+
+
+\cleardoublepage
+\section*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+
+
+\cleardoublepage
+\tableofcontents
+
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+
+
+\chapter{State of the art}
+
+
+
+\chapter{Contribution}
+
+
+
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+
+
+\chapter*{References}
+\addcontentsline{toc}{chapter}{References}
+
+
+
+\begingroup
+	\renewcommand{\chapter}[2]{}
+	\bibliography{bibliography}
+	\bibliographystyle{plain}
+\endgroup
+
+
+\cleardoublepage
+~\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+~\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+
+
+\cleardoublepage
+\chapter*{Terminology}
+\addcontentsline{toc}{chapter}{Terminology}
+
+
+\cleardoublepage
+\renewcommand{\thesubsection}{\Roman{subsection}}
+
+\appendix
+\part*{APPENDIX}
+\addcontentsline{toc}{part}{Appendix}
+\cleardoublepage
+
+\chapter{Appendix A}
+
+\cleardoublepage
+\chapter{Appendix B}
+
+
+\cleardoublepage
+\end{document}
+
